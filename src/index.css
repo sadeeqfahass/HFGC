@@ -1,0 +1,190 @@
+/* 
+#d2ae6c 
+#c0393f
+*/
+
+body {
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem 0;
+}
+
+nav .logo-img img {
+  width: 4rem;
+}
+
+nav .links ul {
+  display: flex;
+}
+
+nav .links ul li {
+  list-style: none;
+  margin-right: 2.5rem;
+  transition: all 0.2s;
+}
+
+nav .links ul li:last-child {
+  margin-right: 0;
+}
+
+nav .links ul li a {
+  text-decoration: none;
+  color: #5d5f61;
+}
+
+nav .links ul li:hover {
+  transform: scale(1.2);
+}
+
+nav .icon {
+  color: #d2ae6c;
+  display: none;
+  font-size: 2rem;
+}
+
+.btn {
+    transition: all .5s;
+}
+
+.btn:active {
+    transform: translateY(.2rem);
+}
+
+.hero {
+  background: url("hero-bg2.jpg");
+  background-size: cover;
+  display: grid;
+  place-items: center;
+}
+
+.hero .text-con {
+  width: 75%;
+}
+
+.hero .text-con .main-heading {
+  letter-spacing: 10px;
+  animation: intro 1.5s ease-in forwards;
+}
+
+.hero .text-con .sub-heading {
+  font-size: 1.2rem;
+  animation: bounceIn 1.5s ease-out .2s forwards;
+}
+
+.hero .hero-btn {
+    animation: appear 3s ease-in-out forwards;
+}
+
+@keyframes intro {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes bounceIn {
+    from {
+        transform: translateY(150%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.partners {
+  padding: 0 5rem;
+  overflow-x: hidden;
+}
+
+.partners::-webkit-scrollbar {
+  display: none;
+}
+
+.partner-con {
+  margin-top: 0.5rem;
+}
+
+.partner-con .partners-img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  filter: grayscale(1);
+}
+
+.partner-con p {
+  font-size: 0.7rem;
+  color: #777;
+}
+
+.services {
+  padding: 2rem 0 4rem;
+  background: #c0393f;
+}
+
+.card {
+  padding: 3rem 0 4rem;
+  width: 18rem;
+  transition: all .5s;
+}
+
+.card:hover {
+  transform: translateY(-.5rem);
+}
+
+.card-icon {
+  color: #d2ae6c;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.see-more {
+  display: inline;
+}
+
+.see-more:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 500px) {
+  nav .links {
+    display: none;
+  }
+
+  nav .icon {
+    display: block;
+  }
+
+  .hero .text-con {
+    width: 100%;
+  }
+
+  .partners {
+    padding: 0;
+  }
+}
