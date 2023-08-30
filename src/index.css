@@ -48,6 +48,10 @@ nav .links ul li:hover {
   transform: scale(1.2);
 }
 
+nav .links ul li:active {
+  transform: translateY(0.2rem);
+}
+
 nav .icon {
   color: #d2ae6c;
   display: none;
@@ -55,11 +59,16 @@ nav .icon {
 }
 
 .btn {
-    transition: all .5s;
+  transition: all 0.5s;
 }
 
 .btn:active {
-    transform: translateY(.2rem);
+  transform: translateY(0.2rem);
+}
+
+.card {
+  width: 18rem;
+  padding: 0;
 }
 
 .hero {
@@ -80,41 +89,41 @@ nav .icon {
 
 .hero .text-con .sub-heading {
   font-size: 1.2rem;
-  animation: bounceIn 1.5s ease-out .2s forwards;
+  animation: bounceIn 1.5s ease-out 0.2s forwards;
 }
 
 .hero .hero-btn {
-    animation: appear 3s ease-in-out forwards;
+  animation: appear 3s ease-in-out forwards;
 }
 
 @keyframes intro {
-    from {
-        transform: translateX(-100%);
-    }
+  from {
+    transform: translateX(-100%);
+  }
 
-    to {
-        transform: translateX(0);
-    }
+  to {
+    transform: translateX(0);
+  }
 }
 
 @keyframes bounceIn {
-    from {
-        transform: translateY(150%);
-    }
+  from {
+    transform: translateY(150%);
+  }
 
-    to {
-        transform: translateY(0);
-    }
+  to {
+    transform: translateY(0);
+  }
 }
 
 @keyframes appear {
-    from {
-        opacity: 0;
-    }
+  from {
+    opacity: 0;
+  }
 
-    to {
-        opacity: 1;
-    }
+  to {
+    opacity: 1;
+  }
 }
 
 .partners {
@@ -147,14 +156,15 @@ nav .icon {
   background: #c0393f;
 }
 
-.card {
+.services .card {
   padding: 3rem 0 4rem;
   width: 18rem;
-  transition: all .5s;
+  transition: all 0.5s;
+  cursor: pointer;
 }
 
-.card:hover {
-  transform: translateY(-.5rem);
+.services .card:hover {
+  transform: translateY(-0.5rem);
 }
 
 .card-icon {
@@ -168,7 +178,58 @@ nav .icon {
 }
 
 .see-more:hover {
-  transform: scale(1.1);
+  color: #d2ae6c;
+}
+
+.solutions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.solutions .card img {
+    width:100%;
+}
+
+.footer {
+  background: #000;
+}
+
+.footer a {
+  color: #d2ae6c;
+  text-decoration: none;
+}
+
+.footer .logo-con img {
+  width: 20rem;
+}
+
+.footer .phone,
+.footer .mail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer .newsletter i {
+  color: #d2ae6c;
+  cursor: pointer;
+  padding: 0.7rem;
+  background: #c0393f;
+  border-radius: 50%;
+}
+
+.footer .newsletter input {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #fff;
+  padding: 0.5rem;
+  color: #777;
+}
+
+.footer .newsletter input:focus {
+  outline: none;
 }
 
 @media (max-width: 500px) {

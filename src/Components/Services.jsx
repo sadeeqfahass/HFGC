@@ -1,10 +1,11 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 function Services() {
   return (
     <>
-      <section className="services container-fluid">
-        <p className="fs-1 text-center text-underline">Services</p>
+      <section className="services container-fluid" id="services">
+        <h1 className=" text-center text-underline">Services</h1>
         <div className="card-con row d-flex justify-content-center gap-5 mt-5">
           <div className="card text-center">
             <div className="card-body">
@@ -41,12 +42,12 @@ function Services() {
             </div>
           </div>
         </div>
-        <a
-          href="#"
+        <NavLink
+          to="/construction"
           className="see-more text-light d-flex justify-content-center mt-4"
         >
           See More &rarr;
-        </a>
+        </NavLink>
       </section>
     </>
   );

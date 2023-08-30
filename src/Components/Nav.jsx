@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
 
 function Nav() {
   return (
@@ -10,16 +11,19 @@ function Nav() {
         <div className="links ">
           <ul className="d-flex align-items-center">
             <li>
-              <a href="#">Products</a>
+              <NavLink to="/">Home</NavLink>
             </li>
             <li>
-              <a href="#">Solutions</a>
+              <NavLink to="/construction">Products</NavLink>
             </li>
             <li>
-              <a href="#">Services</a>
+            <NavLink to="/">Solutions</NavLink>
             </li>
             <li>
-              <a href="#">About</a>
+            <NavLink to="/construction">Services</NavLink>
+            </li>
+            <li>
+            <NavLink to="/construction">About</NavLink>
             </li>
             <button className="btn btn-secondary">Login</button>
           </ul>

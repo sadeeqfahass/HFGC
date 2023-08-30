@@ -1,0 +1,17 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.parent-con {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background: linear-gradient(75deg, #c0393f 65%, #d2ae6c 35% );
+}
+
+.parent-con img {
+    max-width: 100%;
+}
+
+

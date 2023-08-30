@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 function Hero() {
   return (
@@ -9,7 +10,7 @@ function Hero() {
           <p className="sub-heading text-center lh-lg">
           HFGC Energy & Power Solutions Ltd. based in Lagos, Nigeria with Registered No. RC656179 is a premier provider of innovative and high quality power engineering products, technical services and solution that meet the need of customers involve in the production, transmission and distribution of electric power.
           </p>
-          <button className="hero-btn btn btn-danger">Explore</button>
+          <NavLink to="/construction" className="hero-btn btn btn-danger">Explore </NavLink>
         </div>
       </section>
     </>
