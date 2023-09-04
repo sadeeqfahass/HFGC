@@ -72,7 +72,8 @@ nav .icon {
 }
 
 .hero {
-  background: url("hero-bg2.jpg");
+  padding: 10rem 0;
+  background: url("hero-bg.jpg");
   background-size: cover;
   display: grid;
   place-items: center;
@@ -109,10 +110,12 @@ nav .icon {
 @keyframes bounceIn {
   from {
     transform: translateY(150%);
+    opacity: 0;
   }
 
   to {
     transform: translateY(0);
+    opacity: 1;
   }
 }
 
@@ -128,11 +131,7 @@ nav .icon {
 
 .partners {
   padding: 0 5rem;
-  overflow-x: hidden;
-}
-
-.partners::-webkit-scrollbar {
-  display: none;
+  overflow-x: auto;
 }
 
 .partner-con {
@@ -144,6 +143,7 @@ nav .icon {
   height: 50px;
   object-fit: contain;
   filter: grayscale(1);
+  margin-right: 2rem;
 }
 
 .partner-con p {
@@ -161,6 +161,10 @@ nav .icon {
   width: 18rem;
   transition: all 0.5s;
   cursor: pointer;
+}
+
+.services .card-con {
+  margin-right: 0;
 }
 
 .services .card:hover {
@@ -188,7 +192,7 @@ nav .icon {
 }
 
 .solutions .card img {
-    width:100%;
+  width: 100%;
 }
 
 .footer {
@@ -201,7 +205,8 @@ nav .icon {
 }
 
 .footer .logo-con img {
-  width: 20rem;
+  max-width: 18rem;
+  width: 15rem;
 }
 
 .footer .phone,
@@ -221,11 +226,14 @@ nav .icon {
 }
 
 .footer .newsletter input {
+  width: 100%;
   background: transparent;
   border: none;
   border-bottom: 1px solid #fff;
   padding: 0.5rem;
+  text-align: center;
   color: #777;
+  border-radius: none;
 }
 
 .footer .newsletter input:focus {
@@ -241,11 +249,37 @@ nav .icon {
     display: block;
   }
 
+  .hero {
+    padding: 3rem 1rem;
+  }
+
   .hero .text-con {
     width: 100%;
   }
 
   .partners {
     padding: 0;
+  }
+
+  .footer-con {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 760px) {
+  nav .links {
+    display: none;
+  }
+
+  nav .icon {
+    display: block;
+  }
+
+  .hero {
+    padding: 5rem 1rem;
+  }
+
+  .footer-con {
+    flex-direction: column;
   }
 }

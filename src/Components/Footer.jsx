@@ -5,11 +5,11 @@ function Footer() {
   return (
     <>
       <div className="footer container-fluid text-center">
-        <div className="row d-flex align-items-center gap-3 text-light">
-          <div className="col logo-con">
-            <img src="Logo.png" alt="" />
+        <div className="footer-con row d-flex align-items-center gap-2 text-light">
+          <div className="col logo-con sm-col-12 md-col-4">
+            <img src="Logo.png" alt=""/>
           </div>
-          <div className="col">
+          <div className="col sm-col-12 md-col-4">
             <p>Contact Us</p>
             <div className="phone py-1">
               <i class="fa-solid fa-phone"></i>
@@ -24,7 +24,7 @@ function Footer() {
               <a href="mailto:info@hfgcsolutions.com">info@hfgcsolutions.com</a>
             </div>
           </div>
-          <div className="col d-flex flex-column gap-2">
+          <div className="col d-flex flex-column gap-2 sm-col-12 md-col-4">
             <p>Site Map</p>
             <NavLink to="/">Home</NavLink>
             <NavLink to="/products">Products</NavLink>
@@ -32,9 +32,9 @@ function Footer() {
             <NavLink to="/services">Services</NavLink>
             <NavLink to="/about">About</NavLink>
           </div>
-          <div className="col newsletter">
+          <div className="col newsletter sm-col-12 md-col-4">
             <p>Subscribe to our newsletter</p>
-            <div className="input py-2 d-flex justify-content-center align-items-center">
+            <div className="input py-2 d-flex justify-content-center gap-1 align-items-center">
               <input type="text" placeholder="Email" />
               <i class="fa-solid fa-paper-plane"></i>
             </div>

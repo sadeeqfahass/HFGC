@@ -3,10 +3,10 @@ import React from "react";
 function Solutions() {
   return (
     <>
-      <div className="solutions row p-5 gap-3" id="solutions">
+      <div className="solutions row gap-3 p-4 m-0" id="solutions">
         <h1 className="text-center mb-5">Solutions</h1>
         <div class="card sm-col-12 md-col-4">
-          <img src="DSC00039.jpg" class="card-img-top w-100" alt="..." />
+          <img src="MCC.jpg" class="card-img-top w-100" alt="..." />
           <div class="card-body">
             <h5 class="card-title">Motor control centers</h5>
             <p class="card-text">
@@ -33,7 +33,7 @@ function Solutions() {
           </div>
         </div>
         <div class="card sm-col-12 md-col-4">
-          <img src="DSC00084.jpg" class="card-img-top" alt="..." />
+          <img src="Panel-Inside.jpeg" class="card-img-top" alt="..." />
           <div class="card-body">
             <h5 class="card-title">Power Factor Correction</h5>
             <p class="card-text">

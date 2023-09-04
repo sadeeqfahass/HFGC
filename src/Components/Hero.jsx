@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 function Hero() {
   return (
     <>
-      <section className="hero container-fluid w-100 vh-100">
+      <section className="hero container-fluid w-100">
         <div className="text-con text-center text-dark d-flex align-items-center justify-content-center flex-column">
           <h1 className="main-heading md-text-center mb-5">HFGC Energy & Power Solutions Ltd</h1>
           <p className="sub-heading text-center lh-lg">
