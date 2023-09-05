@@ -28,10 +28,10 @@ function Footer() {
           <div className="col d-flex flex-column gap-2 sm-col-12 md-col-4">
             <p>Site Map</p>
             <NavLink to="/">Home</NavLink>
-            <NavLink to="/products">Products</NavLink>
-            <NavLink to="/solutions">Solutions</NavLink>
-            <NavLink to="/services">Services</NavLink>
-            <NavLink to="/about">About</NavLink>
+            <NavLink to="/construction">Products</NavLink>
+            <NavLink to="/">Solutions</NavLink>
+            <NavLink to="/construction">Services</NavLink>
+            <NavLink to="/construction">About</NavLink>
           </div>
           <div className="col newsletter sm-col-12 md-col-4">
             <p>Subscribe to our newsletter</p>
