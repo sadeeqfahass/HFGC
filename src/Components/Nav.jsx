@@ -6,7 +6,7 @@ function Nav() {
     <>
       <nav className="">
         <div className="logo-img">
-          <img src="Logo.png" alt="" />
+          <img src="HFGC.png" alt="" />
         </div>
         <div className="links ">
           <ul className="d-flex align-items-center">

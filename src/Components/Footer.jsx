@@ -8,7 +8,7 @@ function Footer() {
       <div className="footer container-fluid text-center">
         <div className="footer-con row d-flex align-items-center gap-2 text-light">
           <div className="col logo-con sm-col-12 md-col-4">
-            <img src="Logo.png" alt=""/>
+            <img src="HFGC.png" alt=""/>
           </div>
           <div className="col sm-col-12 md-col-4">
             <p>Contact Us</p>
