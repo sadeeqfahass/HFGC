@@ -88,7 +88,7 @@ nav .icon {
 .hero {
   padding: 10rem 0;
   background: url("hero-bg2.jpg");
-  background-size: cover;
+  /* background-size: cover; */
   display: grid;
   place-items: center;
 }

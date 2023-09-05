@@ -2,6 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 
 function Footer() {
+    let year = new Date().getFullYear()
   return (
     <>
       <div className="footer container-fluid text-center">
@@ -41,7 +42,7 @@ function Footer() {
           </div>
         </div>
         <hr className="text-light mb-0"/>
-        <p className="text-light mb-0 py-2">&copy; Copyright HFGC 2023 All rights reserved</p>
+        <p className="text-light mb-0 py-2">&copy; Copyright HFGC {year} All rights reserved</p>
       </div>
     </>
   );
