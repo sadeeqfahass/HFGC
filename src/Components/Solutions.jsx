@@ -4,7 +4,7 @@ function Solutions() {
   return (
     <>
       <div className="solutions row gap-3 p-4 m-0" id="solutions">
-        <h1 className="text-center mb-5">Solutions</h1>
+        <h1 className="text-center mb-5 section-title">Solutions</h1>
         <div class="card sm-col-12 md-col-4">
           <img src="MCC.jpg" class="card-img-top w-100" alt="..." />
           <div class="card-body">

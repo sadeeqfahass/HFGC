@@ -5,7 +5,7 @@ function Services() {
   return (
     <>
       <section className="services container-fluid" id="services">
-        <h1 className=" text-center text-underline">Services</h1>
+        <h1 className=" text-center section-title">Services</h1>
         <div className="card-con row d-flex justify-content-center gap-5 mt-5">
           <div className="card text-center">
             <div className="card-body">

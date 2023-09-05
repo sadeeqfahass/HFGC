@@ -58,6 +58,20 @@ nav .icon {
   font-size: 2rem;
 }
 
+.section-title {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 1rem;
+  align-items: center;
+}
+
+.section-title::after,
+.section-title::before {
+  background: #000;
+  height: .1rem;
+  content: "";
+}
+
 .btn {
   transition: all 0.5s;
 }
@@ -73,7 +87,7 @@ nav .icon {
 
 .hero {
   padding: 10rem 0;
-  background: url("hero-bg.jpg");
+  background: url("hero-bg2.jpg");
   background-size: cover;
   display: grid;
   place-items: center;
@@ -152,13 +166,14 @@ nav .icon {
 }
 
 .services {
-  padding: 2rem 0 4rem;
-  background: #c0393f;
+  padding: 2rem 2rem 4rem;
+  /* background: #c0393f; */
+  background: linear-gradient(219deg, #c0393f 50%, #d2ae6c 50%);
 }
 
 .services .card {
   padding: 3rem 0 4rem;
-  width: 18rem;
+  /* width: 18rem; */
   transition: all 0.5s;
   cursor: pointer;
 }
